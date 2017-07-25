@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ControEntregas"
+             x:Class="ControEntregas.MainPage">
+
+    <Grid>
+        <ProgressBar x:Name="MainPro" Progress="0"  WidthRequest="300" HeightRequest="20" VerticalOptions="Fill"  HorizontalOptions="Center"  IsVisible="False"/>
+        <StackLayout
+     
+      VerticalOptions="Center"   >
+        <Image Source="Logoblack.png" />
+            <Label FontAttributes="Bold" FontSize="30" TextColor="Black"  Text="Control Entregas"
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
+            <StackLayout  Spacing="5"
+              Padding="60">
+                <Entry Placeholder="UserName" TextColor="Black"  PlaceholderColor="Black" x:Name="UserLg" Text="prueba@un-mx.net"   HorizontalTextAlignment="Center"/>
+                <Entry Placeholder="Password" IsPassword="True" TextColor="Black"  PlaceholderColor="Black" x:Name="PassLg"  Text="Unified2017" HorizontalTextAlignment="Center"/>
+                <Button Text="Login" TextColor="White" BackgroundColor="Black" Clicked="Button_Clicked" x:Name="BtnLogin" />
+            </StackLayout>
+        
+    </StackLayout>
+        
+    </Grid>
+
+</ContentPage>
