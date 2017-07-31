@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace ControEntregas.Model
 {
-    public class Entregas
+    public class EntregasM
     {
-        public int ID { get; set; }
-        public string Tema { get; set; }
-        public bool Especificacion { get; set; }
-
-        
+        public string descripcionProducto { get; set; }
+        public int cantidad { get; set; }
     }
 }

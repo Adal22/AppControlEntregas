@@ -36,11 +36,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Control\Lista.cs" />
-    <Compile Include="Model\Entregas.cs" />
+    <Compile Include="Model\EntregasM.cs" />
+    <Compile Include="Model\EntregasModel.cs" />
     <Compile Include="Model\MenuPageItem.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\ViewModels.cs" />
+    <Compile Include="Services\EntregasServices.cs" />
     <Compile Include="Views\DescripcionEntregas.xaml.cs">
       <DependentUpon>DescripcionEntregas.xaml</DependentUpon>
     </Compile>
@@ -102,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

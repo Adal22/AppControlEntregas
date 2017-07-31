@@ -1,11 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-    
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ControEntregas.Views.DescripcionEntregas" Title="Descripción">
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" >
+             x:Class="ControEntregas.Views.DescripcionEntregas" 
+             xmlns:Model="clr-namespace:ControEntregas.Model;assembly=ControEntregas"
+    Title="Descripción">
 
-       
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="ScrollTest" Command="{Binding ScrollToCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>-->
 
-    </StackLayout>
+    <!--<ContentPage.BindingContext>
+
+        <Model:ViewModels/>
+    </ContentPage.BindingContext>-->
+
+    <ListView ItemsSource="{Binding EntregasList}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Vertical"
+                                 Padding="10">
+                        <Label Text="{Binding descripcionProducto}"  LineBreakMode="NoWrap"
+                               Style="{DynamicResource ListItemTextStyle}"
+                               FontSize="24"/>
+                        <Label Text="{Binding cantidad}" LineBreakMode="NoWrap"
+                               Style="{DynamicResource ListItemDetailTextStyle}"
+                               FontSize="18"
+                               Opacity="0.16"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

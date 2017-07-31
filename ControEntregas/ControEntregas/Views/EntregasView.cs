@@ -11,12 +11,23 @@ namespace ControEntregas.Views
     {
         private StackLayout cellWrapper;
         private Label nameLabel;
+        //private Label nameLabel2;
+        //private Label nameLabel3;
+
         public EntregasView()
         {
-            cellWrapper = new StackLayout {Orientation = StackOrientation.Vertical};
-            nameLabel = new Label { FontSize = 20, HorizontalOptions = LayoutOptions.StartAndExpand };
+            cellWrapper = new StackLayout {Orientation = StackOrientation.Horizontal};
+            nameLabel = new Label { FontSize = 20, };
+            //nameLabel2 = new Label { FontSize = 20, };
+            //nameLabel3 = new Label { FontSize = 20,  };
+
             nameLabel.SetBinding(Label.TextProperty, "Tema");
-            cellWrapper.Children.Add(nameLabel);
+            //nameLabel2.SetBinding(Label.TextProperty, "Espacio");
+            //nameLabel3.SetBinding(Label.TextProperty, "ID");
+
+            cellWrapper.Children.Add(nameLabel);            
+          //  cellWrapper.Children.Add(nameLabel2);
+            //cellWrapper.Children.Add(nameLabel3);
             View = cellWrapper;
             
         }

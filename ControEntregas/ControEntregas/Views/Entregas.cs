@@ -27,7 +27,7 @@ namespace ControEntregas.Views
         }
         public void listItemTapped_Tapped(object sender, ItemTappedEventArgs args)
         {
-            Model.Entregas Entrega = (Model.Entregas)args.Item;
+            Model.EntregasModel Entrega = (Model.EntregasModel)args.Item;
             Navigation.PushAsync(new Views.DescripcionEntregas());
         }
     }

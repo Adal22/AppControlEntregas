@@ -16,16 +16,25 @@ namespace Plugin.RestClient
     public class RestClient<T>
     {
         private const string WebServiceUrl = "http://un-app-01:8085/token";
+        private const string WebServiceUrl2 = "http://un-app-01:8085/api/Clientes/1/OrdenesEntrega/3";
 
         public async Task<List<T>> GetAsync()
         {
-            var httpClient = new HttpClient();
+            try
+            {
+                var httpClient = new HttpClient();
 
-            var json = await httpClient.GetStringAsync(WebServiceUrl);
+                var json = await httpClient.GetStringAsync(WebServiceUrl2);
 
-            var taskModels = JsonConvert.DeserializeObject<List<T>>(json);
+                var taskModels =  JsonConvert.DeserializeObject<List<T>>(json);
 
-            return taskModels;
+                return taskModels;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
         public async Task<bool> PostAsync(T t)
