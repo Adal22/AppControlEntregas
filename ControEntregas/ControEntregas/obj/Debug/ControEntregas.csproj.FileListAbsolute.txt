@@ -1,30 +1,33 @@
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\ControEntregas.dll
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\ControEntregas.pdb
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Core.dll
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Platform.dll
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.dll
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Core.pdb
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Core.xml
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Platform.pdb
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.pdb
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.xml
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.dll
-c:\users\adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.pdb
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\ControEntregas.dll.config
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.dll
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Extensions.dll
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Primitives.dll
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.xml
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Extensions.xml
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Primitives.xml
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csproj.App.config
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.Menu.xaml.g.cs
-C:\Users\Adal\Documents\Visual Studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.App.xaml.g.cs
-C:\Users\Adal\Documents\Visual Studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csprojResolveAssemblyReference.cache
-C:\Users\Adal\Documents\Visual Studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.dll
-C:\Users\Adal\Documents\Visual Studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.pdb
-C:\Users\Adal\Documents\Visual Studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.xml
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.MainPage.xaml.g.cs
-C:\Users\Adal\documents\visual studio 2015\Projects\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.DescripcionEntregas.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\ControEntregas.dll.config
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\ControEntregas.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\ControEntregas.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Acr.XamForms.SignaturePad.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csproj.App.config
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csprojResolveAssemblyReference.cache
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.MainPage.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.App.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.Menu.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.DescripcionEntregas.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.Signature.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.EntregasV.xaml.g.cs

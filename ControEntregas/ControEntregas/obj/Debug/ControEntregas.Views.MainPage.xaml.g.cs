@@ -11,8 +11,8 @@
 namespace ControEntregas {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Adal\\documents\\visual studio 2015\\Projects\\ControEntregas\\ControEntregas" +
-        "\\ControEntregas\\Views\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Adal\\Documents\\ControEntregas\\ControEntregas\\ControEntregas\\Views\\MainPa" +
+        "ge.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

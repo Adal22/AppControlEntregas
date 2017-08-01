@@ -9,32 +9,33 @@ using Xamarin.Forms;
 using System.ComponentModel;
 using System.Windows.Input;
 using System.Runtime.CompilerServices;
+using System.Net.Http;
 
 namespace ControEntregas.Model
 {
-    public class ViewModels 
+    public class ViewModels
     {
         public List<EntregasM> EntregasList { get; set; }
+        private Int64 idOrdenEntrega;
 
-        public  ViewModels()
+        public ViewModels(Int64 idOrdenEntrega)
         {
+            this.idOrdenEntrega = idOrdenEntrega;
             EntregasList = new List<EntregasM>();
-            // InitializeDataAsync();
-            //this.InitializeDataAsync();
             Task.Run(() => this.InitializeDataAsync()).Wait();
         }
 
         private async Task InitializeDataAsync()
         {
-            var entregasService = new EntregasServices();
-            EntregasList = await entregasService.GetEntregasAsync();
+            try
+            {
+                var entregasService = new EntregasServices();
+                EntregasList = await entregasService.GetEntregasAsync(idOrdenEntrega);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
-
-        //public event PropertyChangedEventHandler PropertyChanged;
-
-        //protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        //{
-
-        //}
     }
 }

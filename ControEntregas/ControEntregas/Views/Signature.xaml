@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControEntregas.Views.Signature"
+             xmlns:signature="clr-namespace:Acr.XamForms.SignaturePad;assembly=Acr.XamForms.SignaturePad"
+             Title="Firma" Padding="10,10,10,5" >
+    <StackLayout>
+        <signature:SignaturePadView x:Name="padView"
+                                HeightRequest="280" WidthRequest="240"
+                                BackgroundColor="White"
+                                CaptionText="Firma" CaptionTextColor="Black"
+                                ClearText="Borrar!" ClearTextColor="Red"
+                                PromptText="Firme Aqui" PromptTextColor="Red"
+                                SignatureLineColor="Aqua" StrokeColor="Black" StrokeWidth="2" />
+        
+        <Button Clicked="Button_Clicked"  Text="Enviar Firma y Foto" />
+
+
+        <Image Source="foto.png">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="TapGestureRecognizer_Tapped"  />
+            </Image.GestureRecognizers>
+        </Image>
+       
+        <Label FontAttributes="Bold" FontSize="30" TextColor="Black"  Text="Tomar Foto"
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
+
+    </StackLayout>
+   
+</ContentPage>

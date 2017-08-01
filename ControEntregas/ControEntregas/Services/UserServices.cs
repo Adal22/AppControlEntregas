@@ -4,29 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ControEntregas.Model;
-using Plugin.RestClient;
-
+using System.Net.Http;
 
 namespace ControEntregas.Services
 {
     public class UserServices
     {
-        public async Task<List<Login>> GetUserAsync()
-        {
-            RestClient<Login> restClient = new RestClient<Login>();
-            var user = await restClient.GetAsync();
-            return user;
-        }
-
         public async Task<bool> PostUserAsync(Login data)
         {
             try
             {
-                RestClient<Login> restClient = new RestClient<Login>();
-                // var user = await restClient.PostAsync(data);
-                //bool res =  await restClient.IniciarLoggin(data);
-                return await restClient.PostAsync2(data);
-                
+                var httpClient = new HttpClient();
+                var httpContent = new FormUrlEncodedContent(new[]
+                 {
+                    new KeyValuePair<string,string>("userName",data.userName),
+                    new KeyValuePair<string,string>("password",data.password),
+                    new KeyValuePair<string,string>("grant_type", data.grant_type)
+                });
+                var result = await httpClient.PostAsync(String.Format("{0}token", APISettings.API_URL), httpContent).ConfigureAwait(false);
+                string token = await result.Content.ReadAsStringAsync();
+                return result.IsSuccessStatusCode;
             }
             catch (Exception ex)
             {

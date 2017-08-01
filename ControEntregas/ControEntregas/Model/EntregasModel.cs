@@ -8,11 +8,7 @@ namespace ControEntregas.Model
 {
     public class EntregasModel
     {
-        public int ID { get; set; }
-        public string Tema { get; set; }
-        
-       
-
-
+        public Int64 idOrdenEntrega { get; set; }
+        public string descripcion { get; set; }
     }
 }

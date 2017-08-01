@@ -5,28 +5,26 @@
              xmlns:local="clr-namespace:ControEntregas"
              x:Class="ControEntregas.Menu" Title="Menu">
 
-<StackLayout  Padding="12">
-        <Image Source="button1.png">
+    <StackLayout  Padding="12" VerticalOptions="Center">
+        <Image Source="entregasUser2.png"  >
             <Image.GestureRecognizers>
                 <TapGestureRecognizer
                 Tapped="TapGestureRecognizer_Tapped"  />
             </Image.GestureRecognizers>
         </Image>
+        <Label FontAttributes="Bold" FontSize="20" TextColor="Black"  Text="Entregas Usuario" HorizontalTextAlignment="Center"/>
 
-        <Image Source="button1.png">
+
+        <StackLayout  VerticalOptions="Center" Spacing="5"
+              Padding="60">
+        <Image Source="entregasOrden2.png" >
             <Image.GestureRecognizers>
                 <TapGestureRecognizer
-                Tapped="TapGestureRecognizer_Tapped"  />
+                Tapped="TapGestureRecognizer_Tapped_1"  />
             </Image.GestureRecognizers>
         </Image>
-
-        <Image Source="button1.png">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
-                Tapped="TapGestureRecognizer_Tapped"  />
-            </Image.GestureRecognizers>
-        </Image>
-
-
+        <Label FontAttributes="Bold" FontSize="20" TextColor="Black"  Text="Orden de Entrega" HorizontalTextAlignment="Center"/>
+        <Entry Placeholder="# de Orden" TextColor="Black"  PlaceholderColor="Black" x:Name="ordenN"   HorizontalTextAlignment="Center"/>
+    </StackLayout>
     </StackLayout>
 </ContentPage>

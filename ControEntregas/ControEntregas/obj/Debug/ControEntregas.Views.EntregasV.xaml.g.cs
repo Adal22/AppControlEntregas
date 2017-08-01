@@ -11,9 +11,9 @@
 namespace ControEntregas.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Adal\\documents\\visual studio 2015\\Projects\\ControEntregas\\ControEntregas" +
-        "\\ControEntregas\\Views\\EntregasV.xaml")]
-    public partial class EntregasV : global::Xamarin.Forms.ViewCell {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Adal\\Documents\\ControEntregas\\ControEntregas\\ControEntregas\\Views\\Entreg" +
+        "asV.xaml")]
+    public partial class EntregasV : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
