@@ -14,34 +14,33 @@ namespace ControEntregas
     public partial class Menu : ContentPage
     {
         Cliente cliente = new Cliente();
-        public Menu()
+        public Menu(Token token)
         {
-            
-            cliente.idCliente = 1;
+            cliente.idCliente = Convert.ToInt64(token.customerID);
             InitializeComponent();
-            
-        }
-      
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new EntregasV(cliente));
+
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            // var imageSender = (Image)sender;
-            ActInd.IsRunning = true;
-             await Navigation.PushAsync(new EntregasV(cliente));
-            ActInd.IsRunning = false;
+            actLoading.IsRunning = true;
+            //await Task.Delay(2000);
+            await Navigation.PushAsync(new EntregasV(cliente));
+            actLoading.IsRunning = false;
         }
 
         private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
-           if( ordenN.Text != null && ordenN.Text != "" )
+            if (ordenN.Text != null && ordenN.Text != "")
             {
-                ActInd2.IsRunning = true;
+                actLoading.IsRunning = true;
+                EntregasModel entrega = new EntregasModel();
+                entrega.idOrdenEntrega = Convert.ToInt64(ordenN.Text.Trim());
+                ordenN.Text = string.Empty;
+                await Navigation.PushAsync(new DescripcionEntregas(entrega));
+                actLoading.IsRunning = false;
             }
-           else
+            else
             {
                 await DisplayAlert("Warning!", "Favor de Introducir # de Orden", "cancel");
                 ordenN.Focus();

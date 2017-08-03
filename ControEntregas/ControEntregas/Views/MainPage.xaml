@@ -3,13 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ControEntregas"
              x:Class="ControEntregas.MainPage">
-
     <Grid>
-        <ProgressBar x:Name="MainPro" Progress="0"  WidthRequest="300" HeightRequest="20" VerticalOptions="Fill"  HorizontalOptions="Center"  IsVisible="False"/>
-        <StackLayout
-     
-      VerticalOptions="Center"   >
-        <Image Source="Logoblack.png" />
+        <ActivityIndicator VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" x:Name="actLoading" IsRunning="False" Color="Blue"/>
+        <StackLayout VerticalOptions="Center">
+            <Image Source="Logoblack.png" />
             <Label FontAttributes="Bold" FontSize="30" TextColor="Black"  Text="Control Entregas"
            VerticalOptions="Center"
            HorizontalOptions="Center" />
@@ -19,9 +16,6 @@
                 <Entry Placeholder="Password" IsPassword="True" TextColor="Black"  PlaceholderColor="Black" x:Name="PassLg"  Text="Unified2017" HorizontalTextAlignment="Center"/>
                 <Button Text="Login" TextColor="White" BackgroundColor="Black" Clicked="Button_Clicked" x:Name="BtnLogin" />
             </StackLayout>
-        
-    </StackLayout>
-        
+        </StackLayout>
     </Grid>
-
 </ContentPage>

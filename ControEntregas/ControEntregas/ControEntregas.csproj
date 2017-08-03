@@ -41,6 +41,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Token.cs" />
     <Compile Include="Model\ViewModels.cs" />
     <Compile Include="Model\ViewModelsEntregas.cs" />
     <Compile Include="Services\APISettings.cs" />

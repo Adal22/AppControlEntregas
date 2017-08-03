@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using ControEntregas;
+using ControEntregas.Model;
 
 namespace ControEntregas
 {
@@ -23,37 +24,20 @@ namespace ControEntregas
             try
             {
                 BtnLogin.IsEnabled = false;
-                MainPro.IsVisible = true;
-                await MainPro.ProgressTo(1, 500, Easing.Linear);
-                Button button = sender as Button;
+                actLoading.IsRunning = true;
                 Services.UserServices postUer = new Services.UserServices();
                 Model.Login data = new Model.Login(UserLg.Text, PassLg.Text);
-                bool res = await postUer.PostUserAsync(data);
-                await MainPro.ProgressTo(1, 1000, Easing.Linear);
-                // bool res = true;
-
-
-                MainPro.IsVisible = false;
-                if (res == true)
-                {
-                    // App.Current.MainPage = new Menu();
-                 
-                  await Navigation.PushAsync(new Menu());
-                }
-                else
-                {
-                    await DisplayAlert("Warning!", "Usuario o Contraseña Incorrecto", "cancel");
-                }
-
+                Token token = await postUer.PostUserAsync(data);
+                //insert menu in stack and remove login
+                Navigation.InsertPageBefore(new Menu(token), this);
+                await Navigation.PopAsync().ConfigureAwait(false);
+                actLoading.IsRunning = false;
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Error!", ex.ToString(), "cancel");
-            }
-                      
-         
-            
-    
+                await DisplayAlert("Error", ex.Message, "OK");
+                actLoading.IsRunning = false;
+            }    
         }
 
        

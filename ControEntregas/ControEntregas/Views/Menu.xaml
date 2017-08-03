@@ -5,35 +5,29 @@
              xmlns:local="clr-namespace:ControEntregas"
              x:Class="ControEntregas.Menu" Title="Menu">
 
-
-
     <StackLayout  Padding="12" VerticalOptions="Center">
         <Grid>
             <Image Source="entregasUser2.png"  >
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                Tapped="TapGestureRecognizer_Tapped"  />
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  />
                 </Image.GestureRecognizers>
             </Image>
-            <ActivityIndicator x:Name="ActInd" IsRunning="False" />
         </Grid>
-        <Label FontAttributes="Bold" FontSize="20" TextColor="Black"  Text="Entregas Usuario" HorizontalTextAlignment="Center"/>
-
-
+        <Label FontAttributes="Bold" FontSize="20" TextColor="Black"  Text="Entregas empresa" HorizontalTextAlignment="Center"/>
+        <Grid>
+            <ActivityIndicator VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" x:Name="actLoading" IsRunning="False" Color="Blue"/>
+        </Grid>
         <StackLayout  VerticalOptions="Center" Spacing="5"
               Padding="60">
             <Grid>
                 <Image Source="entregasOrden2.png" >
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer
-                Tapped="TapGestureRecognizer_Tapped_1"  />
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  />
                     </Image.GestureRecognizers>
                 </Image>
-                <ActivityIndicator x:Name="ActInd2" IsRunning="False" />
             </Grid>
             <Label FontAttributes="Bold" FontSize="20" TextColor="Black"  Text="Orden de Entrega" HorizontalTextAlignment="Center"/>
-            <Entry Placeholder="# de Orden" TextColor="Black"  PlaceholderColor="Black" x:Name="ordenN"   HorizontalTextAlignment="Center"/>
+            <Entry Placeholder="# de Orden" TextColor="Black"  PlaceholderColor="Black" x:Name="ordenN"   HorizontalTextAlignment="Center" Keyboard="Numeric"/>
         </StackLayout>
     </StackLayout>
-
 </ContentPage>

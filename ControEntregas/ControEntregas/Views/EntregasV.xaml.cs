@@ -15,6 +15,7 @@ namespace ControEntregas.Views
         private ViewModelsEntregas viewModel;
         public EntregasV(Cliente cliente)
         {
+            Title = "Órdenes de entrega";
             InitializeComponent();
             try
             {

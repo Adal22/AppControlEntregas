@@ -20,7 +20,11 @@ namespace ControEntregas.Views
         {
             this.data = data;
             InitializeComponent();
-            Title = data.descripcion;
+            if (data.descripcion != null)
+            {
+                Title = data.descripcion;
+            }
+
             try
             {
                 BindingContext = viewModel = new ViewModels(data.idOrdenEntrega);
