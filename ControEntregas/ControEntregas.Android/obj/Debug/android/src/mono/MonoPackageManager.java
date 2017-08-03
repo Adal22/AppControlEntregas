@@ -103,6 +103,8 @@ class MonoPackageManager_Resources {
 		"Acr.XamForms.SignaturePad.Droid.dll",
 		"FormsViewGroup.dll",
 		"Plugin.CurrentActivity.dll",
+		"Plugin.Media.Abstractions.dll",
+		"Plugin.Media.dll",
 		"Plugin.Permissions.Abstractions.dll",
 		"Plugin.Permissions.dll",
 		"SignaturePad.Android.dll",

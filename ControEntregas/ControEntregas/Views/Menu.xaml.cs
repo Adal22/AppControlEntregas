@@ -16,8 +16,10 @@ namespace ControEntregas
         Cliente cliente = new Cliente();
         public Menu()
         {
+            
             cliente.idCliente = 1;
             InitializeComponent();
+            
         }
       
         private async void Button_Clicked(object sender, EventArgs e)
@@ -27,15 +29,17 @@ namespace ControEntregas
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            var imageSender = (Image)sender;
-            await Navigation.PushAsync(new EntregasV(cliente));
+            // var imageSender = (Image)sender;
+            ActInd.IsRunning = true;
+             await Navigation.PushAsync(new EntregasV(cliente));
+            ActInd.IsRunning = false;
         }
 
         private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
            if( ordenN.Text != null && ordenN.Text != "" )
             {
-
+                ActInd2.IsRunning = true;
             }
            else
             {

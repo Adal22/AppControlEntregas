@@ -6,6 +6,10 @@ ControEntregas.Droid.MainApplication, ControEntregas.Android;md5223076a3d09ec4c7
 ControEntregas.Droid.MainApplication, ControEntregas.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5223076a3d09ec4c71ec2d64f8e96c0cb.MainApplication
 ControEntregas.Droid.MainApplication;md5223076a3d09ec4c71ec2d64f8e96c0cb.MainApplication
 controentregas.droid.MainApplication;md5223076a3d09ec4c71ec2d64f8e96c0cb.MainApplication
+ControEntregas.Droid.SplashActivity, ControEntregas.Android;md5223076a3d09ec4c71ec2d64f8e96c0cb.SplashActivity
+ControEntregas.Droid.SplashActivity, ControEntregas.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5223076a3d09ec4c71ec2d64f8e96c0cb.SplashActivity
+ControEntregas.Droid.SplashActivity;md5223076a3d09ec4c71ec2d64f8e96c0cb.SplashActivity
+controentregas.droid.SplashActivity;md5223076a3d09ec4c71ec2d64f8e96c0cb.SplashActivity
 Acr.XamForms.SignaturePad.Droid.SignaturePadActivity, Acr.XamForms.SignaturePad.Droid;md5b8dfd364381559009fcecf8d0459578a.SignaturePadActivity
 Acr.XamForms.SignaturePad.Droid.SignaturePadActivity, Acr.XamForms.SignaturePad.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b8dfd364381559009fcecf8d0459578a.SignaturePadActivity
 Acr.XamForms.SignaturePad.Droid.SignaturePadActivity;md5b8dfd364381559009fcecf8d0459578a.SignaturePadActivity
@@ -14,6 +18,10 @@ Acr.XamForms.SignaturePad.Droid.SignaturePadRenderer, Acr.XamForms.SignaturePad.
 Acr.XamForms.SignaturePad.Droid.SignaturePadRenderer, Acr.XamForms.SignaturePad.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b8dfd364381559009fcecf8d0459578a.SignaturePadRenderer
 Acr.XamForms.SignaturePad.Droid.SignaturePadRenderer;md5b8dfd364381559009fcecf8d0459578a.SignaturePadRenderer
 acr.xamforms.signaturepad.droid.SignaturePadRenderer;md5b8dfd364381559009fcecf8d0459578a.SignaturePadRenderer
+Plugin.Media.MediaPickerActivity, Plugin.Media;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+Plugin.Media.MediaPickerActivity, Plugin.Media, Version=3.0.1.0, Culture=neutral, PublicKeyToken=null;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+Plugin.Media.MediaPickerActivity;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+plugin.media.MediaPickerActivity;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
 SignaturePad.SignaturePadView, SignaturePad.Android;md51e1d049f7f537b278afac351a7caefbb.SignaturePadView
 SignaturePad.SignaturePadView, SignaturePad.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md51e1d049f7f537b278afac351a7caefbb.SignaturePadView
 SignaturePad.SignaturePadView;md51e1d049f7f537b278afac351a7caefbb.SignaturePadView

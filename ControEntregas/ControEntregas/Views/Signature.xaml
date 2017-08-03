@@ -4,6 +4,8 @@
              x:Class="ControEntregas.Views.Signature"
              xmlns:signature="clr-namespace:Acr.XamForms.SignaturePad;assembly=Acr.XamForms.SignaturePad"
              Title="Firma" Padding="10,10,10,5" >
+   
+  
     <StackLayout>
         <signature:SignaturePadView x:Name="padView"
                                 HeightRequest="280" WidthRequest="240"
@@ -16,17 +18,16 @@
         <Button Clicked="Button_Clicked"  Text="Enviar Firma y Foto" />
 
 
-        <Image Source="foto.png">
+        <Image Source="foto3.png">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer
                 Tapped="TapGestureRecognizer_Tapped"  />
             </Image.GestureRecognizers>
         </Image>
-       
-        <Label FontAttributes="Bold" FontSize="30" TextColor="Black"  Text="Tomar Foto"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
-
+        <Grid>
+            <Image x:Name="Image1" />
+        <ActivityIndicator BindingContext="{x:Reference Image1}" IsRunning="{Binding IsLoading}"   />
+        </Grid>
     </StackLayout>
-   
+    
 </ContentPage>

@@ -24,13 +24,15 @@ namespace ControEntregas
             {
                 BtnLogin.IsEnabled = false;
                 MainPro.IsVisible = true;
+                await MainPro.ProgressTo(1, 500, Easing.Linear);
                 Button button = sender as Button;
                 Services.UserServices postUer = new Services.UserServices();
                 Model.Login data = new Model.Login(UserLg.Text, PassLg.Text);
-                // bool res = await postUer.PostUserAsync(data);
-                bool res = true;
+                bool res = await postUer.PostUserAsync(data);
                 await MainPro.ProgressTo(1, 1000, Easing.Linear);
-                
+                // bool res = true;
+
+
                 MainPro.IsVisible = false;
                 if (res == true)
                 {

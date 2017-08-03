@@ -19,9 +19,13 @@ namespace ControEntregas.Views {
         private global::Acr.XamForms.SignaturePad.SignaturePadView padView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image Image1;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Signature));
             padView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Acr.XamForms.SignaturePad.SignaturePadView>(this, "padView");
+            Image1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "Image1");
         }
     }
 }

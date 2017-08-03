@@ -4,6 +4,8 @@ C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\C
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Acr.XamForms.SignaturePad.dll
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.dll
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Media.Abstractions.dll
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Media.dll
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.dll
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Extensions.dll
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Primitives.dll
@@ -13,6 +15,10 @@ C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\X
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.pdb
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Mono.Android.xml
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Media.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Media.xml
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Media.Abstractions.pdb
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Media.Abstractions.xml
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.xml
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\System.Net.Http.Primitives.xml
@@ -22,12 +28,12 @@ C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\X
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csproj.App.config
-C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csprojResolveAssemblyReference.cache
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.MainPage.xaml.g.cs
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.App.xaml.g.cs
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.Menu.xaml.g.cs
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.DescripcionEntregas.xaml.g.cs
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.Signature.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.EntregasV.xaml.g.cs
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.dll
 C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.pdb
-C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.EntregasV.xaml.g.cs
+C:\Users\Adal\Documents\ControEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csprojResolveAssemblyReference.cache
