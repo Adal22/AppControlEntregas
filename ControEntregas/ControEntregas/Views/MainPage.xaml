@@ -3,19 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ControEntregas"
              x:Class="ControEntregas.MainPage">
-    <Grid>
-        <ActivityIndicator VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" x:Name="actLoading" IsRunning="False" Color="Blue"/>
-        <StackLayout VerticalOptions="Center">
-            <Image Source="Logoblack.png" />
-            <Label FontAttributes="Bold" FontSize="30" TextColor="Black"  Text="Control Entregas"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
-            <StackLayout  Spacing="5"
-              Padding="60">
-                <Entry Placeholder="UserName" TextColor="Black"  PlaceholderColor="Black" x:Name="UserLg" Text="prueba@un-mx.net"   HorizontalTextAlignment="Center"/>
-                <Entry Placeholder="Password" IsPassword="True" TextColor="Black"  PlaceholderColor="Black" x:Name="PassLg"  Text="Unified2017" HorizontalTextAlignment="Center"/>
-                <Button Text="Login" TextColor="White" BackgroundColor="Black" Clicked="Button_Clicked" x:Name="BtnLogin" />
-            </StackLayout>
-        </StackLayout>
-    </Grid>
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+        <Image Source="Logoblack.png" HorizontalOptions="Center"/>
+        <Label FontAttributes="Bold" FontSize="30" TextColor="Black"  Text="Control Entregas" VerticalOptions="Center" HorizontalOptions="Center" />
+        <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="Blue"/>
+        <Entry HorizontalOptions="Center" WidthRequest="250" Placeholder="UserName" TextColor="Black"  PlaceholderColor="Black" x:Name="UserLg" Text="prueba@un-mx.net" HorizontalTextAlignment="Center"/>
+        <Entry HorizontalOptions="Center" WidthRequest="250" Placeholder="Password" IsPassword="True" TextColor="Black"  PlaceholderColor="Black" x:Name="PassLg"  Text="Unified2017" HorizontalTextAlignment="Center"/>
+        <Button WidthRequest="100" Text="Login" TextColor="White" BackgroundColor="Black" Clicked="Button_Clicked" x:Name="BtnLogin" HorizontalOptions="Center"/>
+    </StackLayout>
 </ContentPage>

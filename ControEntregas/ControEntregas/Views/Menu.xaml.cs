@@ -24,7 +24,7 @@ namespace ControEntregas
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             actLoading.IsRunning = true;
-            //await Task.Delay(2000);
+            await Task.Delay(2000);
             await Navigation.PushAsync(new EntregasV(cliente));
             actLoading.IsRunning = false;
         }
@@ -42,7 +42,7 @@ namespace ControEntregas
             }
             else
             {
-                await DisplayAlert("Warning!", "Favor de Introducir # de Orden", "cancel");
+                await DisplayAlert("Error", "Favor de Introducir # de Orden", "cancel");
                 ordenN.Focus();
             }
         }
