@@ -32,11 +32,13 @@ namespace ControEntregas
                 Navigation.InsertPageBefore(new Menu(token), this);
                 await Navigation.PopAsync().ConfigureAwait(false);
                 actLoading.IsRunning = false;
+                BtnLogin.IsEnabled = true;
             }
             catch (Exception ex)
             {
                 await DisplayAlert("Error", ex.Message, "OK");
                 actLoading.IsRunning = false;
+                BtnLogin.IsEnabled = true;
             }    
         }
 

@@ -17,14 +17,14 @@ namespace ControEntregas
         public Menu(Token token)
         {
             cliente.idCliente = Convert.ToInt64(token.customerID);
+            cliente.token = token;
             InitializeComponent();
-
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             actLoading.IsRunning = true;
-            await Task.Delay(2000);
+            //await Task.Delay(2000);
             await Navigation.PushAsync(new EntregasV(cliente));
             actLoading.IsRunning = false;
         }
@@ -37,6 +37,7 @@ namespace ControEntregas
                 EntregasModel entrega = new EntregasModel();
                 entrega.idOrdenEntrega = Convert.ToInt64(ordenN.Text.Trim());
                 ordenN.Text = string.Empty;
+                entrega.token = this.cliente.token;
                 await Navigation.PushAsync(new DescripcionEntregas(entrega));
                 actLoading.IsRunning = false;
             }

@@ -10,5 +10,7 @@ namespace ControEntregas.Model
     {
         public Int64 idOrdenEntrega { get; set; }
         public string descripcion { get; set; }
+
+        public Token token = new Token();
     }
 }

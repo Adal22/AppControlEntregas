@@ -216,3 +216,10 @@ C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Andro
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\res\drawable\un.jpg
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\bin\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\bin\Debug\Plugin.Geolocator.dll
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\bin\Debug\Plugin.Geolocator.pdb
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\bin\Debug\Plugin.Geolocator.xml
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\bin\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\bin\Debug\Plugin.Geolocator.dll.mdb
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb

@@ -3,6 +3,8 @@ C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Andro
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Acr.XamForms.SignaturePad.Droid.dll
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\FormsViewGroup.dll
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Plugin.CurrentActivity.dll
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Plugin.Geolocator.Abstractions.dll
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Plugin.Geolocator.dll
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Plugin.Media.Abstractions.dll
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Plugin.Media.dll
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas.Android\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll

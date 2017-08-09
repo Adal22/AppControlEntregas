@@ -4,30 +4,27 @@
              x:Class="ControEntregas.Views.Signature"
              xmlns:signature="clr-namespace:Acr.XamForms.SignaturePad;assembly=Acr.XamForms.SignaturePad"
              Title="Firma" Padding="10,10,10,5" >
-   
-  
-    <StackLayout>
+
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
         <signature:SignaturePadView x:Name="padView"
                                 HeightRequest="280" WidthRequest="240"
-                                BackgroundColor="White"
+                                BackgroundColor="Gray"
                                 CaptionText="Firma" CaptionTextColor="Black"
-                                ClearText="Borrar!" ClearTextColor="Red"
-                                PromptText="Firme Aqui" PromptTextColor="Red"
-                                SignatureLineColor="Aqua" StrokeColor="Black" StrokeWidth="2" />
-        
-        <Button Clicked="Button_Clicked"  Text="Enviar Firma y Foto" />
+                                ClearText="Borrar!" ClearTextColor="Blue"
+                                PromptText="Firme Aqui" PromptTextColor="Blue"
+                                StrokeColor="Black" StrokeWidth="2" SignatureLineColor="Aqua"/>
 
-
-        <Image Source="foto3.png">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
-                Tapped="TapGestureRecognizer_Tapped"  />
-            </Image.GestureRecognizers>
-        </Image>
-        <Grid>
-            <Image x:Name="Image1" />
-        <ActivityIndicator BindingContext="{x:Reference Image1}" IsRunning="{Binding IsLoading}" Color="Blue"/>
-        </Grid>
+        <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="Blue"/>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Spacing="10">
+            <Image Source="foto3.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="imgPhoto"/>
+        </StackLayout>
+        <Button Clicked="Button_Clicked"  Text="Enviar Firma y Foto" x:Name="btnEnviarInformacion"/>
     </StackLayout>
-    
+
 </ContentPage>

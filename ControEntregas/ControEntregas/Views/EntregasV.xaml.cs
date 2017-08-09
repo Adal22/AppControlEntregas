@@ -13,8 +13,10 @@ namespace ControEntregas.Views
     public partial class EntregasV : ContentPage
     {
         private ViewModelsEntregas viewModel;
+        private Cliente cliente;
         public EntregasV(Cliente cliente)
         {
+            this.cliente = cliente;
             Title = "Órdenes de entrega";
             InitializeComponent();
             try
@@ -34,6 +36,7 @@ namespace ControEntregas.Views
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             EntregasModel data = (EntregasModel)e.Item;
+            data.token = cliente.token;
             Navigation.PushAsync(new DescripcionEntregas(data));
         }
     }

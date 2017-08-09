@@ -20,10 +20,11 @@ namespace ControEntregas.Views
         {
             this.data = data;
             InitializeComponent();
-            if (data.descripcion != null)
-            {
-                Title = data.descripcion;
-            }
+            Title = "Productos";
+            //if (data.descripcion != null)
+            //{
+            //    Title = data.descripcion;
+            //}
 
             try
             {
@@ -41,7 +42,10 @@ namespace ControEntregas.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Signature());
+            HistorialEntregaModel obj = new HistorialEntregaModel();
+            obj.idOrdenEntrega = data.idOrdenEntrega;
+            obj.token = data.token;
+            await Navigation.PushAsync(new Signature(obj));
         }
     }
 }

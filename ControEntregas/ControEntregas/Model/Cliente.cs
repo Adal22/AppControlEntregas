@@ -9,5 +9,6 @@ namespace ControEntregas.Model
     public class Cliente
     {
         public Int64 idCliente { get; set; }
+        public Token token = new Token();
     }
 }

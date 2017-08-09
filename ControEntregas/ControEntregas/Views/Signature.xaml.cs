@@ -9,64 +9,108 @@ using Xamarin.Forms.Xaml;
 using ControEntregas.Services;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using Plugin.Geolocator;
+using ControEntregas.Model;
+using System.IO;
 
 namespace ControEntregas.Views
 {
     //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Signature : ContentPage
     {
-       
-        public Signature()
+        private HistorialEntregaModel info;
+        private MediaFile foto;
+        public Signature(HistorialEntregaModel info)
         {
+            this.info = info;
+            this.info.idUsuario = this.info.token.userID;
             InitializeComponent();
         }
-
-        private  void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            var image = padView.GetImage(ImageFormatType.Png);
-           
-        }
-
-        private async void Upload_Clicked(object sender, EventArgs e)
-        {
-           
-            if (!CrossMedia.Current.IsTakePhotoSupported)
+            try
             {
-                await DisplayAlert("No Camara", "No es Compatible", "OK");
-                return;
-            }
-            var file = await CrossMedia.Current.PickPhotoAsync();
-           
-            if (file == null)
-                return;
+                if (foto != null)
+                {
+                    btnEnviarInformacion.IsEnabled = false;
+                    actLoading.IsRunning = true;
+                    var firma = padView.GetImage(ImageFormatType.Jpg);
+                    var position = await CrossGeolocator.Current.GetPositionAsync();
+                    info.latitud = position.Latitude.ToString();
+                    info.longitud = position.Longitude.ToString();
+                    info.firmas.Add(this.GetAsByteArray(firma)); //is converted to byte array
+                    info.fotos.Add(this.GetAsByteArray(foto.GetStream()));
 
-        //    Image1.Source = ImageSource.FromStream(() => file.GetStream());
+                    HistorialEntregaServices service = new HistorialEntregaServices();
+                    await service.PostHistorialEntregas(info);
+
+                    actLoading.IsRunning = false;
+                    await DisplayAlert("Enviado", "La información ha sido enviada correctamente", "Ok");
+                    btnEnviarInformacion.IsEnabled = true;
+                    await this.ReturnToMenu();
+                }
+                else
+                {
+                    await DisplayAlert("Error", "Tome una foto antes de enviar", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "OK");
+                actLoading.IsRunning = false;
+                btnEnviarInformacion.IsEnabled = true;
+            }
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            
-            await CrossMedia.Current.Initialize();
-            if(!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            try
             {
-                await DisplayAlert("No Camara", "No es Compatible", "OK");
-                return;
+                actLoading.IsRunning = true;
+                await CrossMedia.Current.Initialize();
+                if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+                {
+                    await DisplayAlert("No Camara", "No es Compatible", "OK");
+                    return;
+                }
+                foto = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                {
+                    Directory = "Control_entregas",
+                    SaveToAlbum = true,
+                    Name = "test.jpg",
+                    RotateImage = true
+                });
+
+                if (foto == null)
+                    return;
+
+                imgPhoto.Source = ImageSource.FromStream(() => foto.GetStream());
+                imgPhoto.WidthRequest = 120;
+                imgPhoto.HeightRequest = 100;
+
+                actLoading.IsRunning = false;
             }
-            var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+            catch (Exception ex)
             {
-                //Directory = "test",
-                SaveToAlbum = true,
-                Name = "test.jpg"
+                await DisplayAlert("Error", "Ha ocurrido un error al accionar la cámara", "Ok");
+            }
+        }
 
-            });
+        private byte[] GetAsByteArray(Stream input)
+        {
+            input.Position = 0;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                input.CopyTo(ms);
+                input.Dispose();
+                return ms.ToArray();
+            }
+        }
 
-            if (file == null)
-                return;
-           
-            Image1.Source = ImageSource.FromStream(() => file.GetStream());
-            Image1.WidthRequest = 120;
-            Image1.HeightRequest = 120;
-            
+        private async Task ReturnToMenu()
+        {
+            Navigation.InsertPageBefore(new Menu(this.info.token), Navigation.NavigationStack.First());
+            await Navigation.PopToRootAsync();
         }
     }
 }

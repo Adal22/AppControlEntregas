@@ -76,3 +76,8 @@ C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\D
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.EntregasV.xaml.g.cs
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.dll
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.pdb
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Geolocator.dll
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Geolocator.pdb
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Geolocator.xml
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\Debug\Plugin.Geolocator.Abstractions.pdb
