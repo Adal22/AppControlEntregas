@@ -14,8 +14,8 @@ namespace ControEntregas
         
         public MainPage()
         {
-            InitializeComponent();            
-            
+            InitializeComponent();
+            Title = "Control de entregas";
         }
 
 

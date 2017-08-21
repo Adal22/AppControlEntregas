@@ -16,10 +16,10 @@
                                  Padding="12,6">
                         <Label Text="{Binding descripcionProducto}"  LineBreakMode="NoWrap"
                                Style="{DynamicResource ListItemTextStyle}"
-                               FontSize="24"/>
-                        <Label Text="{Binding cantidad}" LineBreakMode="NoWrap"
+                               FontSize="18"/>
+                        <Label Text="{Binding cantidadString}" LineBreakMode="NoWrap"
                                Style="{DynamicResource ListItemDetailTextStyle}"
-                               FontSize="18"
+                               FontSize="14"
                                Opacity="0.30"/>
                     </StackLayout>
                 </ViewCell>

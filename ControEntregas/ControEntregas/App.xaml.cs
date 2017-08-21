@@ -13,7 +13,11 @@ namespace ControEntregas
         {
             //InitializeComponent();
 
-            MainPage = new NavigationPage(new ControEntregas.MainPage());
+            MainPage = new NavigationPage(new ControEntregas.MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#175081"),
+                BarTextColor = Color.White,
+            };
             
         }
 

@@ -12,7 +12,7 @@
             </Image.GestureRecognizers>
         </Image>
         <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="Black"  Text="Entregas empresa" HorizontalTextAlignment="Center"/>
-        <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="Blue"/>
+        <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="#175081"/>
         <Image Source="entregasOrden2.png" HorizontalOptions="Center">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  />

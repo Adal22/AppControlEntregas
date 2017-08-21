@@ -10,5 +10,11 @@ namespace ControEntregas.Model
     {
         public string descripcionProducto { get; set; }
         public int cantidad { get; set; }
+
+        public string cantidadString
+        {
+            get { return String.Format("Cantidad: {0}", this.cantidad); }
+            set { cantidadString = value; } 
+        }
     }
 }

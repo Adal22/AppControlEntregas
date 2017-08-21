@@ -15,7 +15,7 @@
                                 PromptText="Firme Aqui" PromptTextColor="Blue"
                                 StrokeColor="Black" StrokeWidth="2" SignatureLineColor="Aqua"/>
 
-        <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="Blue"/>
+        <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="#175081"/>
         <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Spacing="10">
             <Image Source="foto3.png">
                 <Image.GestureRecognizers>
