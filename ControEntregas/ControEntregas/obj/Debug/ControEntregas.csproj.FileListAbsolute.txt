@@ -67,7 +67,6 @@ C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\D
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csproj.App.config
-C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.csprojResolveAssemblyReference.cache
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.MainPage.xaml.g.cs
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.App.xaml.g.cs
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Debug\ControEntregas.Views.Menu.xaml.g.cs
