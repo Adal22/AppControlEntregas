@@ -109,7 +109,7 @@ namespace ControEntregas.Views
 
         private async Task ReturnToMenu()
         {
-            Navigation.InsertPageBefore(new Menu(this.info.token), Navigation.NavigationStack.First());
+            Navigation.InsertPageBefore(new Menu(), Navigation.NavigationStack.First());
             await Navigation.PopToRootAsync();
         }
     }

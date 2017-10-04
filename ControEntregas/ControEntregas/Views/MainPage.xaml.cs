@@ -23,16 +23,31 @@ namespace ControEntregas
         {
             try
             {
-                BtnLogin.IsEnabled = false;
-                actLoading.IsRunning = true;
-                Services.UserServices postUer = new Services.UserServices();
-                Model.Login data = new Model.Login(UserLg.Text, PassLg.Text);
-                Token token = await postUer.PostUserAsync(data);
-                //insert menu in stack and remove login
-                Navigation.InsertPageBefore(new Menu(token), this);
-                await Navigation.PopAsync().ConfigureAwait(false);
-                actLoading.IsRunning = false;
-                BtnLogin.IsEnabled = true;
+                if (UserLg.Text != null && UserLg.Text.Trim() != string.Empty)
+                {
+                    if (PassLg.Text != null && PassLg.Text != string.Empty)
+                    {
+
+                        BtnLogin.IsEnabled = false;
+                        actLoading.IsRunning = true;
+                        Services.UserServices postUer = new Services.UserServices();
+                        Model.Login data = new Model.Login(UserLg.Text.Trim(), PassLg.Text.Trim());
+                        Token token = await postUer.PostUserAsync(data);
+                        PropertiesOperations.SetTokenProperties(token);
+                        await this.RemoveLogin();
+                        actLoading.IsRunning = false;
+                        BtnLogin.IsEnabled = true;
+                        App.Current.Properties["logged"] = true;
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "Ingresa contraseña", "OK");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Error", "Ingresa usuario", "OK");
+                }
             }
             catch (Exception ex)
             {
@@ -42,6 +57,20 @@ namespace ControEntregas
             }    
         }
 
-       
+        private async Task RemoveLogin()
+        {
+            try
+            {
+                //insert menu in stack and remove login
+                Navigation.InsertPageBefore(new Menu(), this);
+                await Navigation.PopAsync().ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
     }
 }

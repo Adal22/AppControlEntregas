@@ -61,6 +61,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>false</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -93,7 +94,9 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="app.config" />
     <None Include="Entitlements.plist" />
-    <None Include="Info.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
@@ -124,6 +127,10 @@
     </Reference>
     <Reference Include="Acr.XamForms.SignaturePad.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\SignaturePad.Xamarin.Forms.PCL.1.0.0.1\lib\Xamarin.iOS10\Acr.XamForms.SignaturePad.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="KeyboardOverlap.Forms.Plugin.iOSUnified, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.KeyboardOverlap.1.0.0.4\lib\Xamarin.iOS10\KeyboardOverlap.Forms.Plugin.iOSUnified.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Plugin.Geolocator, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -182,12 +189,42 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="ZXing.Net.Mobile.Core, Version=2.1.47.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ZXing.Net.Mobile.2.1.47\lib\Xamarin.iOS10\ZXing.Net.Mobile.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.portable, Version=2.1.47.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ZXing.Net.Mobile.2.1.47\lib\Xamarin.iOS10\zxing.portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ZXingNetMobile, Version=2.1.47.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ZXing.Net.Mobile.2.1.47\lib\Xamarin.iOS10\ZXingNetMobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ControEntregas\ControEntregas.csproj">
       <Project>{9c31c1c1-7d6c-42f5-99f8-9fdb8e10e6d4}</Project>
       <Name>ControEntregas</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\entregasOrden2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\entregasUser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\foto2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\foto3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Logoblack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

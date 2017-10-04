@@ -12,12 +12,19 @@ namespace ControEntregas
         public App()
         {
             //InitializeComponent();
-
-            MainPage = new NavigationPage(new ControEntregas.MainPage())
+            //If user is logged
+            if (App.Current.Properties.ContainsKey("logged") && ((bool)App.Current.Properties["logged"]))
             {
-                BarBackgroundColor = Color.FromHex("#175081"),
-                BarTextColor = Color.White,
-            };
+                MainPage = new NavigationPage(new Menu());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new ControEntregas.MainPage())
+                {
+                    BarBackgroundColor = Color.FromHex("#175081"),
+                    BarTextColor = Color.White,
+                };
+            }
             
         }
 

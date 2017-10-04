@@ -1345,6 +1345,9 @@ namespace ControEntregas.Droid
 			global::Acr.XamForms.SignaturePad.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ControEntregas.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Acr.XamForms.SignaturePad.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::ControEntregas.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ControEntregas.Droid.Resource.Attribute.actionBarSize;
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::ControEntregas.Droid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::ControEntregas.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::ControEntregas.Droid.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Animation
@@ -4093,10 +4096,10 @@ namespace ControEntregas.Droid
 			public const int notify_panel_notification_icon_bg = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int splash_back = 2130837777;
+			public const int splash = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int UN = 2130837778;
+			public const int splash_back = 2130837778;
 			
 			static Drawable()
 			{
@@ -4228,6 +4231,9 @@ namespace ControEntregas.Droid
 			// aapt resource value: 0x7f080024
 			public const int collapseActionView = 2131230756;
 			
+			// aapt resource value: 0x7f0800b6
+			public const int contentFrame = 2131230902;
+			
 			// aapt resource value: 0x7f08004e
 			public const int contentPanel = 2131230798;
 			
@@ -4339,8 +4345,8 @@ namespace ControEntregas.Droid
 			// aapt resource value: 0x7f080048
 			public const int list_item = 2131230792;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int masked = 2131230903;
+			// aapt resource value: 0x7f0800b8
+			public const int masked = 2131230904;
 			
 			// aapt resource value: 0x7f08009f
 			public const int media_actions = 2131230879;
@@ -4651,8 +4657,8 @@ namespace ControEntregas.Droid
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int visible = 2131230902;
+			// aapt resource value: 0x7f0800b7
+			public const int visible = 2131230903;
 			
 			// aapt resource value: 0x7f080091
 			public const int volume_item_container = 2131230865;
@@ -4950,6 +4956,12 @@ namespace ControEntregas.Droid
 			
 			// aapt resource value: 0x7f030044
 			public const int Toolbar = 2130903108;
+			
+			// aapt resource value: 0x7f030045
+			public const int zxingscanneractivitylayout = 2130903109;
+			
+			// aapt resource value: 0x7f030046
+			public const int zxingscannerfragmentlayout = 2130903110;
 			
 			static Layout()
 			{

@@ -41,3 +41,4 @@ C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\R
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Release\ControEntregas.Views.EntregasV.xaml.g.cs
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Release\ControEntregas.dll
 C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Release\ControEntregas.pdb
+C:\Users\Samuel\Documents\AppControlEntregas\ControEntregas\ControEntregas\obj\Release\ControEntregas.csprojResolveAssemblyReference.cache

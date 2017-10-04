@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ZXing.Mobile;
 
 namespace ControEntregas.Droid
 {
@@ -16,6 +17,7 @@ namespace ControEntregas.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            MobileBarcodeScanner.Initialize(Application);
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

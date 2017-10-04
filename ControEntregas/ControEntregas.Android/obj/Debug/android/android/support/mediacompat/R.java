@@ -2995,8 +2995,8 @@ containing a value of this type.
         public static final int notification_template_icon_low_bg=0x7f020114;
         public static final int notification_tile_bg=0x7f02010f;
         public static final int notify_panel_notification_icon_bg=0x7f020110;
-        public static final int splash_back=0x7f020111;
-        public static final int un=0x7f020112;
+        public static final int splash=0x7f020111;
+        public static final int splash_back=0x7f020112;
     }
     public static final class id {
         public static final int action0=0x7f08009c;
@@ -3038,6 +3038,7 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f080039;
         public static final int clip_vertical=0x7f08003a;
         public static final int collapseActionView=0x7f080024;
+        public static final int contentFrame=0x7f0800b6;
         public static final int contentPanel=0x7f08004e;
         public static final int custom=0x7f080055;
         public static final int customPanel=0x7f080054;
@@ -3075,7 +3076,7 @@ containing a value of this type.
         public static final int line3=0x7f0800ad;
         public static final int listMode=0x7f08000f;
         public static final int list_item=0x7f080048;
-        public static final int masked=0x7f0800b7;
+        public static final int masked=0x7f0800b8;
         public static final int media_actions=0x7f08009f;
         public static final int middle=0x7f080022;
         public static final int mini=0x7f08003e;
@@ -3179,7 +3180,7 @@ containing a value of this type.
         public static final int up=0x7f080009;
         public static final int useLogo=0x7f080018;
         public static final int view_offset_helper=0x7f08000e;
-        public static final int visible=0x7f0800b6;
+        public static final int visible=0x7f0800b7;
         public static final int volume_item_container=0x7f080091;
         public static final int withText=0x7f080027;
         public static final int wrap_content=0x7f08001f;
@@ -3272,6 +3273,8 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f030042;
         public static final int tabbar=0x7f030043;
         public static final int toolbar=0x7f030044;
+        public static final int zxingscanneractivitylayout=0x7f030045;
+        public static final int zxingscannerfragmentlayout=0x7f030046;
     }
     public static final class string {
         public static final int ApplicationName=0x7f09003f;

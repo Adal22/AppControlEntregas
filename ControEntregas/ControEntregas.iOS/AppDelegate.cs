@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using KeyboardOverlap.Forms.Plugin.iOSUnified;
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 namespace ControEntregas.iOS
 {
@@ -23,6 +25,14 @@ namespace ControEntregas.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            KeyboardOverlapRenderer.Init();
+
+            //Set Navigation bar colors
+            UINavigationBar.Appearance.BarTintColor = Color.FromHex("#175081").ToUIColor();
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+            UINavigationBar.Appearance.SetTitleTextAttributes(
+                new UITextAttributes { TextColor = Color.White.ToUIColor() });
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

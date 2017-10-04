@@ -101,6 +101,7 @@ class MonoPackageManager_Resources {
 		"ControEntregas.Android.dll",
 		"Acr.XamForms.SignaturePad.dll",
 		"Acr.XamForms.SignaturePad.Droid.dll",
+		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Geolocator.Abstractions.dll",
@@ -132,6 +133,9 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"ZXing.Net.Mobile.Core.dll",
+		"zxing.portable.dll",
+		"ZXingNetMobile.dll",
 		"ControEntregas.dll",
 		"Newtonsoft.Json.dll",
 	};
