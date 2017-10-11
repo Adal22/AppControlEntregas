@@ -4,27 +4,41 @@
              x:Class="ControEntregas.Views.Signature"
              xmlns:signature="clr-namespace:Acr.XamForms.SignaturePad;assembly=Acr.XamForms.SignaturePad"
              Title="Firma" Padding="10,10,10,5" >
-
-
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
-        <signature:SignaturePadView x:Name="padView"
-                                HeightRequest="280" WidthRequest="240"
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal">
+            <signature:SignaturePadView x:Name="padView" HorizontalOptions="FillAndExpand"
+                                HeightRequest="180"
                                 BackgroundColor="Gray"
                                 CaptionText="Firma" CaptionTextColor="Black"
                                 ClearText="Borrar!" ClearTextColor="Blue"
                                 PromptText="Firme Aqui" PromptTextColor="Blue"
                                 StrokeColor="Black" StrokeWidth="2" SignatureLineColor="Aqua"/>
-
-        <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="#175081"/>
-        <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Spacing="10">
-            <Image Source="foto3.png">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Image x:Name="imgPhoto"/>
         </StackLayout>
-        <Button Clicked="Button_Clicked"  Text="Enviar Firma y Foto" x:Name="btnEnviarInformacion"/>
+        <StackLayout Orientation="Vertical">
+            <ActivityIndicator HorizontalOptions="Center" x:Name="actLoading" IsRunning="False" Color="#175081"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="foto3.png" HorizontalOptions="StartAndExpand" VerticalOptions="Start">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <ListView x:Name="lstPhotos" ItemsSource="{Binding PhotosList, Mode=TwoWay}" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <!--<ImageCell ImageSource="{Binding Path, Mode=TwoWay}"/>-->
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" HeightRequest="300" WidthRequest="320">
+                                    <Image Source="{Binding Path, Mode=TwoWay}" HorizontalOptions="CenterAndExpand" HeightRequest="300" WidthRequest="320"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+        <!--<Image x:Name="imgPhoto"/>-->
+        <StackLayout Orientation="Horizontal" VerticalOptions="End">
+            <Button VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Clicked="Button_Clicked"  Text="Enviar Firma y Foto" x:Name="btnEnviarInformacion"/>
+        </StackLayout>
     </StackLayout>
-
 </ContentPage>

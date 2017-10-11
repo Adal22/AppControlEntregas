@@ -15,7 +15,11 @@ namespace ControEntregas
             //If user is logged
             if (App.Current.Properties.ContainsKey("logged") && ((bool)App.Current.Properties["logged"]))
             {
-                MainPage = new NavigationPage(new Menu());
+                MainPage = new NavigationPage(new Menu())
+                {
+                    BarBackgroundColor = Color.FromHex("#175081"),
+                    BarTextColor = Color.White,
+                };
             }
             else
             {

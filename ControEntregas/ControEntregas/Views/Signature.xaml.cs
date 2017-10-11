@@ -12,6 +12,7 @@ using Plugin.Media.Abstractions;
 using Plugin.Geolocator;
 using ControEntregas.Model;
 using System.IO;
+using System.Collections.ObjectModel;
 
 namespace ControEntregas.Views
 {
@@ -19,18 +20,23 @@ namespace ControEntregas.Views
     public partial class Signature : ContentPage
     {
         private HistorialEntregaModel info;
-        private MediaFile foto;
+        public ObservableCollection<MediaFile> PhotosList { get; set; }
+        public string test { get; set; }
         public Signature(HistorialEntregaModel info)
         {
             this.info = info;
             this.info.idUsuario = this.info.token.userID;
+            this.PhotosList = new ObservableCollection<MediaFile>();
             InitializeComponent();
+
+            BindingContext = this;
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
             try
             {
-                if (foto != null)
+                
+                if (PhotosList.Count > 0)
                 {
                     btnEnviarInformacion.IsEnabled = false;
                     actLoading.IsRunning = true;
@@ -39,7 +45,12 @@ namespace ControEntregas.Views
                     info.latitud = position.Latitude.ToString();
                     info.longitud = position.Longitude.ToString();
                     info.firmas.Add(this.GetAsByteArray(firma)); //is converted to byte array
-                    info.fotos.Add(this.GetAsByteArray(foto.GetStream()));
+
+                    //some photos
+                    foreach (MediaFile foto in PhotosList)
+                    {
+                        info.fotos.Add(this.GetAsByteArray(foto.GetStream()));
+                    }
 
                     HistorialEntregaServices service = new HistorialEntregaServices();
                     await service.PostHistorialEntregas(info);
@@ -73,20 +84,17 @@ namespace ControEntregas.Views
                     await DisplayAlert("No Camara", "No es Compatible", "OK");
                     return;
                 }
-                foto = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                PhotosList.Add ( await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                 {
                     Directory = "Control_entregas",
                     SaveToAlbum = true,
-                    Name = "test.jpg",
+                    Name = string.Format("{0}.png", DateTime.Now.ToString("yyyyMMddHHmmss")),
                     RotateImage = true
-                });
+                }));
 
-                if (foto == null)
-                    return;
-
-                imgPhoto.Source = ImageSource.FromStream(() => foto.GetStream());
-                imgPhoto.WidthRequest = 120;
-                imgPhoto.HeightRequest = 100;
+                //imgPhoto.Source = ImageSource.FromStream(() => foto.GetStream());
+                //imgPhoto.WidthRequest = 120;
+                //imgPhoto.HeightRequest = 100;
 
                 actLoading.IsRunning = false;
             }

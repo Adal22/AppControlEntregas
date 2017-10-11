@@ -14,11 +14,9 @@
                 <ViewCell>
                     <StackLayout Orientation="Vertical"
                                  Padding="12,6">
-                        <Label Text="{Binding descripcionProducto}"  LineBreakMode="NoWrap"
-                               Style="{DynamicResource ListItemTextStyle}"
+                        <Label Text="{Binding descripcionProducto}"
                                FontSize="18"/>
-                        <Label Text="{Binding cantidadString}" LineBreakMode="NoWrap"
-                               Style="{DynamicResource ListItemDetailTextStyle}"
+                        <Label Text="{Binding cantidadString}"
                                FontSize="14"
                                Opacity="0.30"/>
                     </StackLayout>

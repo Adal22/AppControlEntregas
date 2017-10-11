@@ -22,7 +22,7 @@ namespace ControEntregas.Views {
         private global::Xamarin.Forms.ActivityIndicator actLoading;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Image imgPhoto;
+        private global::Xamarin.Forms.ListView lstPhotos;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button btnEnviarInformacion;
@@ -32,7 +32,7 @@ namespace ControEntregas.Views {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Signature));
             padView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Acr.XamForms.SignaturePad.SignaturePadView>(this, "padView");
             actLoading = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ActivityIndicator>(this, "actLoading");
-            imgPhoto = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "imgPhoto");
+            lstPhotos = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "lstPhotos");
             btnEnviarInformacion = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnEnviarInformacion");
         }
     }
