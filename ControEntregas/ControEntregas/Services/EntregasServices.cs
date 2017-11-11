@@ -14,13 +14,13 @@ namespace ControEntregas.Services
 {
     public class EntregasServices
     {
-        public async Task<List<EntregasM>> GetEntregasAsync(Int64 idOrdenEntrega)
+        public List<EntregasM> GetEntregasAsync(Int64 idOrdenEntrega)
         {
             try
             {
                 var httpClient = new HttpClient();
                 //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "Your Oauth token");
-                var json = await httpClient.GetStringAsync(String.Format("{0}/api/Clientes/1/OrdenesEntrega/{1}", APISettings.API_URL, idOrdenEntrega)).ConfigureAwait(false);
+                var json = httpClient.GetStringAsync(String.Format("{0}/api/Clientes/1/OrdenesEntrega/{1}", APISettings.API_URL, idOrdenEntrega)).Result;//.ConfigureAwait(false);
                 var taskModels = JsonConvert.DeserializeObject<List<EntregasM>>(json);
                 return taskModels;
             }

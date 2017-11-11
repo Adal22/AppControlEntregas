@@ -32,10 +32,10 @@ namespace ControEntregas.Views
             }
             catch (Exception ex)
             {
-                Device.BeginInvokeOnMainThread(async () =>
+                Device.BeginInvokeOnMainThread(() =>
                 {
-                    await this.DisplayAlert("Error", ex.InnerException.Message, "OK");
-                    await this.Navigation.PopAsync(); // or anything else
+                    this.DisplayAlert("Error", ex.InnerException.Message, "OK");
+                    this.Navigation.PopAsync(); // or anything else
                 });
             }
         }

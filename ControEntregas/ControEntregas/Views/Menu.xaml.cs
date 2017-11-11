@@ -62,6 +62,7 @@ namespace ControEntregas
                 entrega.idOrdenEntrega = Convert.ToInt64(txtNumOrden.Text.Trim());
                 txtNumOrden.Text = string.Empty;
                 entrega.token = this.cliente.token;
+                await Task.Delay(3000);
                 await Navigation.PushAsync(new DescripcionEntregas(entrega));
                 actLoading.IsRunning = false;
             }

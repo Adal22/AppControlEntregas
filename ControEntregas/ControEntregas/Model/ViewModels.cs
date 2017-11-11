@@ -22,15 +22,16 @@ namespace ControEntregas.Model
         {
             this.idOrdenEntrega = idOrdenEntrega;
             EntregasList = new List<EntregasM>();
-            Task.Run(() => this.InitializeDataAsync()).Wait();
+            //Task.Run(() => this.InitializeDataAsync()).Wait();
+            this.InitializeDataAsync();
         }
 
-        private async Task InitializeDataAsync()
+        private void InitializeDataAsync()
         {
             try
             {
                 var entregasService = new EntregasServices();
-                EntregasList = await entregasService.GetEntregasAsync(idOrdenEntrega);
+                EntregasList = entregasService.GetEntregasAsync(idOrdenEntrega);
             }
             catch (Exception ex)
             {
